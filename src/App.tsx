@@ -2,8 +2,6 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-
-import { motion } from "motion/react";
 import { 
   ArrowRight, 
   CheckCircle2, 
@@ -69,7 +67,7 @@ export default function App() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
-            <motion.div 
+            <<div> 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -77,7 +75,7 @@ export default function App() {
             >
               <span className="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
               Agencia de Marketing Digital para Latinos en USA
-            </motion.div>
+            <div>
             
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
@@ -97,7 +95,7 @@ export default function App() {
               Ayudamos a dueños de negocios latinos en Estados Unidos a crecer, tener estabilidad y aumentar sus ingresos con estrategias de marketing digital que sí funcionan.
             </motion.p>
             
-            <motion.div 
+            <div>
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -119,7 +117,7 @@ export default function App() {
               >
                 Solicitar asesoría gratuita
               </a>
-            </motion.div>
+            <div>
           </div>
         </div>
       </section>
@@ -150,7 +148,7 @@ export default function App() {
                 desc: "Publicas fotos en redes sociales, pero nadie te compra ni te llama."
               }
             ].map((item, i) => (
-              <motion.div 
+              <div>
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -163,7 +161,7 @@ export default function App() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                 <p className="text-gray-400 leading-relaxed">"{item.desc}"</p>
-              </motion.div>
+              <div>
             ))}
           </div>
         </div>
@@ -173,7 +171,7 @@ export default function App() {
       <section className="py-24 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div
+            <div>
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -206,9 +204,9 @@ export default function App() {
                 Descubre cómo lo hacemos
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
-            </motion.div>
+            <div>
             
-            <motion.div
+            <div>
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -237,7 +235,7 @@ export default function App() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            <div>
           </div>
         </div>
       </section>
@@ -273,7 +271,7 @@ export default function App() {
                 desc: "Haz que tu negocio se vea profesional, confiable y destaque de la competencia. Una buena imagen te permite cobrar lo que realmente vales."
               }
             ].map((service, i) => (
-              <motion.div 
+              <div> 
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -286,7 +284,7 @@ export default function App() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
                 <p className="text-gray-400 leading-relaxed text-lg">{service.desc}</p>
-              </motion.div>
+              <div>
             ))}
           </div>
           
@@ -337,7 +335,7 @@ export default function App() {
                 desc: "Empiezas a recibir llamadas y mensajes de personas interesadas."
               }
             ].map((item, i) => (
-              <motion.div 
+              <div>
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -350,7 +348,7 @@ export default function App() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                 <p className="text-gray-400">{item.desc}</p>
-              </motion.div>
+              <div>
             ))}
           </div>
         </div>
@@ -439,7 +437,7 @@ export default function App() {
                 quote: "Las campañas y el manejo de redes cambiaron mi salón. Antes tenía días vacíos, ahora siempre tengo la agenda llena con semanas de anticipación."
               }
             ].map((testimonial, i) => (
-              <motion.div 
+              <div> 
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -462,7 +460,7 @@ export default function App() {
                     <p className="text-sm text-gold-500">{testimonial.business}</p>
                   </div>
                 </div>
-              </motion.div>
+              <div>
             ))}
           </div>
         </div>
